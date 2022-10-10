@@ -1,0 +1,61 @@
+.mugs {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    @include cardtext;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: 320px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    max-width: 280px;
+    color: rgba(29, 31, 46, 0.7);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mugs {
+    &__wrapper {
+      text-align: center;
+    }
+    &__img {
+      width: 280px;
+    }
+
+    &__card {
+      margin-bottom: 40px;
+    }
+
+    &__card {
+      width: 290px;
+    }
+  }
+}

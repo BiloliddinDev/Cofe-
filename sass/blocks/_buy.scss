@@ -1,0 +1,87 @@
+.buy {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    @include cardtext;
+    margin-bottom: 100px;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1d1f2e;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    color: #1d1f2e;
+    margin-bottom: 15px;
+  }
+
+  &__btn {
+    padding: 10px 25px;
+    border: none;
+    background-color: #1d1f2e;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .buy {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__right {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .buy {
+    &__left {
+      flex-direction: column;
+    }
+
+    &__btn {
+      margin-top: 40px;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.even {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+
+  &__heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    color: #1d1f2e;
+    margin-top: 120px;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    max-width: 660px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 21px;
+    color: rgba(29, 31, 46, 0.7);
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #a25f4b;
+    border-bottom: 3px solid #a25f4b33;
+    margin-bottom: 98px;
+  }
+
+  &__span {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    color: #1d1f2e;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &::after {
+      content: "";
+      width: 50px;
+      height: 3px;
+      background-color: #ececed;
+    }
+    &::before {
+      content: "";
+      width: 50px;
+      height: 3px;
+      background-color: #ececed;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__image {
+    margin-bottom: 35px;
+  }
+
+  &__info {
+    @include cardtext;
+    margin-bottom: 5px;
+  }
+
+  &__price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(29, 31, 46, 0.7);
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__del {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    text-align: center;
+    color: #a25f4b;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .even {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .even {
+    &__image {
+      width: 280px;
+    }
+  }
+}

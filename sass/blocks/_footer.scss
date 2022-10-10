@@ -1,0 +1,103 @@
+.footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    margin-top: 22px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 260px;
+    color: rgba(29, 31, 46, 0.7);
+    margin-bottom: 80px;
+  }
+
+  &__alink {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(29, 31, 46, 0.3);
+  }
+
+  &__main {
+    display: flex;
+    gap: 180px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    text-decoration: none;
+    color: rgba(29, 31, 46, 0.7);
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1d1f2e;
+    margin-bottom: 10px;
+  }
+
+  &__p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    color: rgba(29, 31, 46, 0.7);
+  }
+
+  &__silka {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 36px;
+    color: #1d1f2e;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &__lorem {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(29, 31, 46, 0.3);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer {
+    gap: 40px;
+    &__main {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+}
